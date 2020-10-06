@@ -11,7 +11,7 @@ const SearchBar = (props) => {
 
   const changeHandler = event => {
     let { value } = event.target;
-    window.find(search) ? window.moveTo(event.x, event.y) : setSearch(`Couldn't find ${value} `)
+    setSearch(value)
   }
 
   return (
